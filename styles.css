@@ -42,6 +42,9 @@
     gap: 15px;
     align-items: center;
 }
+.navbar__s4{
+    display: none;
+}
 .mylearning{
     position: relative;
     cursor: pointer;
@@ -125,7 +128,9 @@
     margin-top: 10px;
 }
 .course-card{
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 .course-card img{
     height: 50%;
@@ -152,10 +157,12 @@
 }
 .popular__container{
     display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
-    align-items: center;
 }
 .footer{
     padding: 30px;
@@ -176,4 +183,33 @@
 }
 .footer__one p{
     margin: 10px;
+}
+/* Media Quries */
+@media screen and (max-width:800px) {
+    .body{
+        font-size: 10px;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
+    .navbar__s3{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
+    .navbar__s3{
+        display: none;
+    }
 }
